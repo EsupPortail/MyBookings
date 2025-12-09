@@ -1,0 +1,13 @@
+App\Entity\Group:
+    group_1:
+        title: 'Etudiants'
+        provider: <{app.alice.parameters.defaultGroups.provider}>
+        query: <{app.alice.parameters.defaultGroups.etudiant}>
+    group_2:
+        title: 'Personnels'
+        provider: <{app.alice.parameters.defaultGroups.provider}>
+        query: <{app.alice.parameters.defaultGroups.personnel}>
+    group_3:
+        title: 'Testeurs'
+        provider: <{app.alice.parameters.defaultGroups.provider}>
+        query: <{app.alice.parameters.defaultGroups.testeurs}>

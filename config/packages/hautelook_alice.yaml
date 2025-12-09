@@ -1,0 +1,6 @@
+when@dev:
+    hautelook_alice:
+        fixtures_path: 'src/DataFixtures/Fixtures/dev'
+when@test:
+    hautelook_alice:
+        fixtures_path: 'src/DataFixtures/Fixtures/test'

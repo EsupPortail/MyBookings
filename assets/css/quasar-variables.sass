@@ -1,0 +1,17 @@
+// Variables de couleur Quasar
+// Ces couleurs sont maintenant chargées dynamiquement depuis le serveur Symfony
+// via des CSS custom properties (variables CSS)
+// Pour modifier ces couleurs en production, éditez les variables d'environnement côté serveur
+
+// Utilisation de var() avec fallback pour garantir qu'une valeur existe toujours
+$primary   : var(--q-custom-primary, #006D82)
+$secondary : var(--q-custom-secondary, #6d6d6c)
+$accent    : var(--q-custom-accent, #efefef)
+
+$dark      : var(--q-custom-dark, #3d3d3c)
+
+$positive  : var(--q-custom-positive, #198754)
+$negative  : var(--q-custom-negative, #d60550)
+$info      : var(--q-custom-info, #17a2b8)
+$warning   : var(--q-custom-warning, #e28700)
+$white     : var(--q-custom-white, #FFFFFF)

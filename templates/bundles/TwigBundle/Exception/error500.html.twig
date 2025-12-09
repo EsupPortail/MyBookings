@@ -1,0 +1,9 @@
+{% extends '/bundles/TwigBundle/Exception/base_error.html.twig' %}
+
+{% block body %}
+    <div class="error-page">
+        <h2>Erreur serveur (500)</h2>
+        <p>Une erreur interne du serveur s'est produite.</p>
+        <a href="{{ path('app_home') }}" class="btn btn-secondary">Retour à l'accueil</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,147 @@
+{% extends 'emails/header.html.twig' %}
+
+{% block email_content %}
+{% apply inline_css %}
+	<tr>
+		<td align="center" valign="top" id="templateBody" data-template-container>
+								<!--[if (gte mso 9)|(IE)]>
+								<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+								<tr>
+									<td align="center" valign="top" width="600" style="width:600px;">
+								<![endif]-->
+								<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+									<tr>
+										<td valign="top" class="bodyContainer"><table class="mcnTextBlock" style="min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
+												<tbody class="mcnTextBlockOuter">
+												<tr>
+													<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+														<!--[if mso]>
+														<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+														<tr>
+														<![endif]-->
+
+														<!--[if mso]>
+														<td valign="top" width="600" style="width:600px;">
+														<![endif]-->
+														<table style="max-width:100%; min-width:100%;" class="mcnTextContentContainer" width="100%" cellspacing="0" cellpadding="0" border="0" align="left">
+															<tbody><tr>
+
+																<td class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top">
+																	{% if status is same as ('waiting_moderation') %}
+																		<h2>Nouvelle réservation en attente</h2>
+																	{% elseif ((status is same as ('accepted_moderation')) or (status is same as ('accepted_auto'))) %}
+																		<h2>Nouvelle réservation acceptée</h2>
+																	{% elseif status is same as ('start_booking') %}
+																		<h2>Réservation en cours</h2>
+                                                                    {% elseif status is same as ('end_booking') %}
+                                                                        <h2>Réservation terminée</h2>
+																	{% elseif status is same as ('refused') %}
+																		<h2>Réservation refusée</h2>
+																	{% endif %}
+																</td>
+															</tr>
+															</tbody></table>
+														<!--[if mso]>
+														</td>
+														<![endif]-->
+
+														<!--[if mso]>
+														</tr>
+														</table>
+														<![endif]-->
+													</td>
+												</tr>
+												</tbody>
+											</table>
+											<table class="mcnTextBlock" style="min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
+												<tbody class="mcnTextBlockOuter">
+												<tr>
+													<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+														<!--[if mso]>
+														<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+														<tr>
+														<![endif]-->
+
+														<!--[if mso]>
+														<td valign="top" width="600" style="width:600px;">
+														<![endif]-->
+														<table style="max-width:100%; min-width:100%;" class="mcnTextContentContainer" width="100%" cellspacing="0" cellpadding="0" border="0" align="left">
+															<tbody><tr>
+
+																<td class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top">
+																	{% if status is same as ('waiting_moderation') %}
+																		{% if app.request is not null %}
+																		<div style="text-align: center">
+																			<a href="https://{{ app.request.server.get('DOMAIN_NAME') }}/administration/site/{{ idService }}/booking?catalog={{ catalog }}&status=pending">Modérer la demande</a>
+																		</div>
+																		{% endif %}
+																	{% endif %}
+																	<div style="min-width: 100%;border-top: 2px solid #EAEAEA;margin-top:18px;margin-bottom: 9px"></div>
+
+																	<h4 class="null" style="text-align: left;"><strong>Détails :</strong></h4>
+																	<ul>
+																		<li>Titre de la réservation : <b>{{ title }}</b></li>
+																		<li>Participants :
+																			<ul>
+																				{% for user in users %}
+																				<li><b>{{ user.displayUserName }}</b> ({{ user.email }})</li>
+																				{% endfor %}
+																			</ul>
+																		</li>
+																		<li>Catégorie : <b>{{ category }}/{{ subCategory }}</b></li>
+																		<li>Service : <b>{{ service }}</b></li>
+																		<li>Ressource réservée :</li>
+																		<ul>
+																			{% for resource in resources %}
+																				<li><b>{{ resource.title }}</b></li>
+																			{% endfor %}
+																		</ul>
+																		<li>Date de début : <b>{{ dateStart|date("d/m/Y H:i") }}</b></li>
+																		<li>Date de fin : <b>{{ dateEnd|date("d/m/Y H:i") }}</b></li>
+																		{% if status is same as ('waiting_moderation') %}
+																			<li>Statut : <b>En attente de modération</b></li>
+																		{% elseif ((status is same as ('accepted_moderation')) or (status is same as ('accepted_auto'))) %}
+																			<li>Statut : <b>Accepté</b></li>
+																		{% elseif status is same as ('refused') %}
+																			<li>Statut : <b>Refusé</b></li>
+																		{% endif %}
+																	</ul>
+
+																	{% if ((userComment is not empty) and (userComment is not null)) %}
+																		<p>Commentaire : </p>
+																		<p>"<i>{{ userComment }}</i>"</p>
+																	{% endif %}
+																	{% if ((confirmComment is not empty) and (confirmComment is not null)) %}
+																		<p>Commentaire de la modération</p>
+																		<p>"<i>{{ confirmComment }}</i>"</p>
+																	{% endif %}
+
+																	<div style="min-width: 100%;border-top: 2px solid #EAEAEA;margin-top:18px;margin-bottom: 9px"></div>
+																</td>
+															</tr>
+															</tbody></table>
+														<!--[if mso]>
+														</td>
+														<![endif]-->
+
+														<!--[if mso]>
+														</tr>
+														</table>
+														<![endif]-->
+													</td>
+												</tr>
+												</tbody>
+											</table></td>
+									</tr>
+								</table>
+								<!--[if (gte mso 9)|(IE)]>
+								</td>
+								</tr>
+								</table>
+								<![endif]-->
+							</td>
+						</tr>
+{% include 'emails/footer.html.twig' %}
+{% endapply %}
+
+{% endblock %}

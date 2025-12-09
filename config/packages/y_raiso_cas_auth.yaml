@@ -1,0 +1,7 @@
+y_raiso_cas_auth:
+  server_login_url: '%env(CAS_LOGIN_URL)%'
+  server_validation_url: '%env(CAS_VALIDATION_URL)%'
+  server_logout_url: '%env(CAS_LOGOUT_URL)%'
+  server_force_redirect_https: '%env(bool:REDIRECT_HTTPS)%'
+  xml_namespace: 'cas'
+  options: []

@@ -1,0 +1,112 @@
+framework:
+    workflows:
+        booking_instance:
+            type: state_machine
+            marking_store:
+                type: 'method'
+                property: 'status'
+            support: App\Entity\Booking
+            initial_marking: init
+            places:
+                - init
+                - pending
+                - accepted
+                - progress
+                - returned
+                - refused
+                - deleted
+            transitions:
+                waiting_moderation:
+                    from: init
+                    to: pending
+                accepted_auto:
+                    from: init
+                    to: accepted
+                accepted_auto_silent:
+                    from: init
+                    to: accepted
+                accepted_moderation:
+                    from: pending
+                    to: accepted
+                start_booking:
+                    from: accepted
+                    to: progress
+                end_booking:
+                    from: progress
+                    to: returned
+                refused:
+                    from: pending
+                    to: refused
+                deletedUser:
+                    from: [accepted, pending]
+                    to: deleted
+                deleted:
+                    from: [accepted, pending, returned]
+                    to: deleted
+        ressourcerie_effect:
+            type: state_machine
+            marking_store:
+                type: 'method'
+                property: 'status'
+            support: App\Entity\Booking
+            initial_marking: re_init
+            places:
+                - re_init
+                - re_requested
+                - re_progress
+                - re_delivered
+                - re_removed
+            transitions:
+                start_request:
+                    from: re_init
+                    to: re_requested
+                accept_request:
+                    from: [re_init, re_requested]
+                    to: re_progress
+                refuse_request:
+                    from: [re_init, re_requested]
+                    to: re_removed
+                end_request:
+                    from: re_progress
+                    to: re_delivered
+                remove_request:
+                    from: [re_progress]
+                    to: re_removed
+        ressourcerie_catalog:
+            type: state_machine
+            marking_store:
+                type: 'method'
+                property: 'status'
+            support: App\Entity\CatalogueResource
+            initial_marking: rc_new
+            places:
+                - rc_new
+                - rc_pending
+                - rc_validated
+                - rc_published
+                - rc_disabled
+            transitions:
+                new_submission:
+                    from: rc_new
+                    to: rc_pending
+                new_catalog:
+                    from: rc_new
+                    to: rc_validated
+                validate_submission:
+                    from: rc_pending
+                    to: rc_validated
+                refuse_submission:
+                    from: rc_pending
+                    to: rc_disabled
+                sit_accept_submission:
+                    from: rc_validated
+                    to: rc_published
+                sit_refuse_submission:
+                    from: rc_validated
+                    to: rc_disabled
+                disable_submission:
+                    from: rc_published
+                    to: rc_disabled
+                available_submission:
+                    from: rc_disabled
+                    to: rc_published

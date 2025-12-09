@@ -1,0 +1,19 @@
+parameters:
+  app.alice.parameters.locations: [ "IUT","Campus","Carnot","Aurillac","Le Puy","Dunant","Estaing","Gergovia" ]
+  app.alice.parameters.services: ["Informatique de proximité","Logistique","Bibliothèque", "Service Annexe", "SUAPS"]
+  app.alice.parameters.resourceTypes.informatique.subcategories: ["PC","Ecran","Clavier","iPad"]
+  app.alice.parameters.resourceTypes.informatique.imageExamples: [ 3.jpg, 4.jpg ]
+  app.alice.parameters.resourceTypes.audiovisuel.subcategories: ["Projecteur","Tableau blanc interactif"]
+  app.alice.parameters.resourceTypes.audiovisuel.imageExamples: [ 5.jpg, 6.jpg ]
+  app.alice.parameters.resourceTypes.salle.subcategories: [ 'Amphithéâtre', 'Box de travail', 'Salle informatique', 'Laboratoire de langue', 'Gymnase', 'Salle de sport' ]
+  app.alice.parameters.resourceTypes.salle.imageExamples: [ 1.jpg, 2.jpg ]
+  app.alice.parameters.resourceTypes.vehicule.subcategories: [ 'Minibus', 'Voiture', 'Fourgon', 'Vélo électrique', 'Triporteur' ]
+  app.alice.parameters.resourceTypes.vehicule.imageExamples: [ 7.png, 8.png ]
+  app.alice.parameters.resourceTypes.materiel.subcategories: [ 'Chaise', 'Table', 'Armoire', 'Fauteuil', 'Bureau' ]
+  app.alice.parameters.resourceTypes.materiel.imageExamples: [ 8.png, 9.png ]
+  app.alice.parameters.defaultGroups.etudiant: "%env(DEFAULT_GROUP_STUDENT)%"
+  app.alice.parameters.defaultGroups.personnel: "%env(DEFAULT_GROUP_TEACHER)%"
+  app.alice.parameters.defaultGroups.testeurs: "%env(DEFAULT_GROUP_TESTER)%"
+  app.alice.parameters.defaultGroups.provider: "%env(DEFAULT_GROUP_PROVIDER)%"
+
+

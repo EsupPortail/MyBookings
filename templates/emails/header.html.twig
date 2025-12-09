@@ -1,0 +1,608 @@
+{% block body %}
+{% apply inline_css %}
+	<style>
+		p{
+			margin:10px 0;
+			padding:0;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		h1,h2,h3,h4,h5,h6{
+			display:block;
+			margin:0;
+			padding:0;
+		}
+		img,a img{
+			border:0;
+			height:auto;
+			outline:none;
+			text-decoration:none;
+		}
+		body,#bodyTable,#bodyCell{
+			height:100%;
+			margin:0;
+			padding:0;
+			width:100%;
+		}
+		#outlook a{
+			padding:0;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		table{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		.templateContainer{
+			max-width:600px !important;
+		}
+		.mcnImage,.mcnRetinaImage{
+			vertical-align:bottom;
+		}
+		#templateHeader{
+			background-color:#F7F7F7;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0px;
+			padding-bottom:0px;
+		}
+		.headerContainer{
+			background-color:transparent;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+		}
+		@media only screen and (min-width:768px){
+			.templateContainer{
+				width:600px !important;
+			}
+		}
+		@media only screen and (max-width: 480px){
+			.mcnRetinaImage{
+				max-width:100% !important;
+			}
+			.mcnImage{
+				width:100% !important;
+			}
+		}
+         p{
+             margin:10px 0;
+             padding:0;
+         }
+        table{
+            border-collapse:collapse;
+        }
+        h1,h2,h3,h4,h5,h6{
+            display:block;
+            margin:0;
+            padding:0;
+        }
+        img,a img{
+            border:0;
+            height:auto;
+            outline:none;
+            text-decoration:none;
+        }
+        body,#bodyTable,#bodyCell{
+            height:100%;
+            margin:0;
+            padding:0;
+            width:100%;
+        }
+        .mcnPreviewText{
+            display:none !important;
+        }
+        #outlook a{
+            padding:0;
+        }
+        img{
+            -ms-interpolation-mode:bicubic;
+        }
+        table{
+            mso-table-lspace:0pt;
+            mso-table-rspace:0pt;
+        }
+        .ReadMsgBody{
+            width:100%;
+        }
+        .ExternalClass{
+            width:100%;
+        }
+        p,a,li,td,blockquote{
+            mso-line-height-rule:exactly;
+        }
+        a[href^=tel],a[href^=sms]{
+            color:inherit;
+            cursor:default;
+            text-decoration:none;
+        }
+        p,a,li,td,body,table,blockquote{
+            -ms-text-size-adjust:100%;
+            -webkit-text-size-adjust:100%;
+        }
+        .ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.ExternalClass span,.ExternalClass font{
+            line-height:100%;
+        }
+        a[x-apple-data-detectors]{
+            color:inherit !important;
+            text-decoration:none !important;
+            font-size:inherit !important;
+            font-family:inherit !important;
+            font-weight:inherit !important;
+            line-height:inherit !important;
+        }
+        .templateContainer{
+            max-width:600px !important;
+        }
+        a.mcnButton{
+            display:block;
+        }
+        .mcnImage,.mcnRetinaImage{
+            vertical-align:bottom;
+        }
+        .mcnTextContent{
+            word-break:break-word;
+        }
+        .mcnTextContent img{
+            height:auto !important;
+        }
+        .mcnDividerBlock{
+            table-layout:fixed !important;
+        }
+        /*
+        @tab Page
+        @section Heading 1
+        @style heading 1
+        */
+        h1{
+            color:#222222;
+            font-family:Helvetica;
+            font-size:40px;
+            font-style:normal;
+            font-weight:bold;
+            line-height:150%;
+            letter-spacing:normal;
+            text-align:center;
+        }
+        /*
+        @tab Page
+        @section Heading 2
+        @style heading 2
+        */
+        h2{
+            color:#222222;
+            font-family:Helvetica;
+            font-size:34px;
+            font-style:normal;
+            font-weight:bold;
+            line-height:150%;
+            letter-spacing:normal;
+            text-align:left;
+        }
+        /*
+        @tab Page
+        @section Heading 3
+        @style heading 3
+        */
+        h3{
+            color:#444444;
+            font-family:Helvetica;
+            font-size:22px;
+            font-style:normal;
+            font-weight:bold;
+            line-height:150%;
+            letter-spacing:normal;
+            text-align:left;
+        }
+        /*
+        @tab Page
+        @section Heading 4
+        @style heading 4
+        */
+        h4{
+            color:#949494;
+            font-family:Georgia;
+            font-size:20px;
+            font-style:italic;
+            font-weight:normal;
+            line-height:125%;
+            letter-spacing:normal;
+            text-align:left;
+        }
+        /*
+        @tab Header
+        @section Header Container Style
+        */
+        #templateHeader{
+            background-color:#F7F7F7;
+            background-image:none;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            border-top:0;
+            border-bottom:0;
+            padding-top:0px;
+            padding-bottom:0px;
+        }
+        /*
+        @tab Header
+        @section Header Interior Style
+        */
+        .headerContainer{
+            background-color:transparent;
+            background-image:none;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            border-top:0;
+            border-bottom:0;
+            padding-top:0;
+            padding-bottom:0;
+        }
+        /*
+        @tab Header
+        @section Header Text
+        */
+        .headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+            color:#757575;
+            font-family:Helvetica;
+            font-size:16px;
+            line-height:150%;
+            text-align:left;
+        }
+        /*
+        @tab Header
+        @section Header Link
+        */
+        .headerContainer .mcnTextContent a,.headerContainer .mcnTextContent p a{
+            color:#007C89;
+            font-weight:normal;
+            text-decoration:underline;
+        }
+        /*
+        @tab Body
+        @section Body Container Style
+        */
+        #templateBody{
+            background-color:#FFFFFF;
+            background-image:none;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            border-top:0;
+            border-bottom:0;
+            padding-top:36px;
+            padding-bottom:45px;
+        }
+        /*
+        @tab Body
+        @section Body Interior Style
+        */
+        .bodyContainer{
+            background-color:transparent;
+            background-image:none;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            border-top:0;
+            border-bottom:0;
+            padding-top:0;
+            padding-bottom:0;
+        }
+        /*
+        @tab Body
+        @section Body Text
+        */
+        .bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+            color:#757575;
+            font-family:Helvetica;
+            font-size:16px;
+            line-height:150%;
+            text-align:left;
+        }
+        /*
+        @tab Body
+        @section Body Link
+        */
+        .bodyContainer .mcnTextContent a,.bodyContainer .mcnTextContent p a{
+            color:#007C89;
+            font-weight:normal;
+            text-decoration:underline;
+        }
+        /*
+        @tab Footer
+        @section Footer Style
+        */
+        #templateFooter{
+            background-color:#006d82;
+            background-image:none;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            border-top:0;
+            border-bottom:0;
+            padding-top:0px;
+            padding-bottom:0px;
+        }
+        /*
+        @tab Footer
+        @section Footer Interior Style
+        */
+        .footerContainer{
+            background-color:transparent;
+            background-image:none;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            border-top:0;
+            border-bottom:0;
+            padding-top:0;
+            padding-bottom:0;
+        }
+        /*
+        @tab Footer
+        @section Footer Text
+        */
+        .footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+            color:#FFFFFF;
+            font-family:Helvetica;
+            font-size:12px;
+            line-height:150%;
+            text-align:center;
+        }
+        /*
+        @tab Footer
+        @section Footer Link
+        */
+        .footerContainer .mcnTextContent a,.footerContainer .mcnTextContent p a{
+            color:#FFFFFF;
+            font-weight:normal;
+            text-decoration:underline;
+        }
+        @media only screen and (min-width:768px){
+            .templateContainer{
+                width:600px !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            body,table,td,p,a,li,blockquote{
+                -webkit-text-size-adjust:none !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            body{
+                width:100% !important;
+                min-width:100% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnRetinaImage{
+                max-width:100% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnImage{
+                width:100% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCaptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCardRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnImageCardRightImageContentContainer{
+                max-width:100% !important;
+                width:100% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnBoxedTextContentContainer{
+                min-width:100% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnImageGroupContent{
+                padding:9px !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOuter .mcnTextContent{
+                padding-top:9px !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent{
+                padding-top:18px !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnImageCardBottomImageContent{
+                padding-bottom:9px !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnImageGroupBlockInner{
+                padding-top:0 !important;
+                padding-bottom:0 !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnImageGroupBlockOuter{
+                padding-top:9px !important;
+                padding-bottom:9px !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnTextContent,.mcnBoxedTextContentColumn{
+                padding-right:18px !important;
+                padding-left:18px !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+                padding-right:18px !important;
+                padding-bottom:0 !important;
+                padding-left:18px !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            .mcpreview-image-uploader{
+                display:none !important;
+                width:100% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            /*
+            @tab Mobile Styles
+            @section Heading 1
+            @tip Make the first-level headings larger in size for better readability on small screens.
+            */
+            h1{
+                font-size:30px !important;
+                line-height:125% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            /*
+            @tab Mobile Styles
+            @section Heading 2
+            @tip Make the second-level headings larger in size for better readability on small screens.
+            */
+            h2{
+                font-size:26px !important;
+                line-height:125% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            /*
+            @tab Mobile Styles
+            @section Heading 3
+            @tip Make the third-level headings larger in size for better readability on small screens.
+            */
+            h3{
+                font-size:20px !important;
+                line-height:150% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            /*
+            @tab Mobile Styles
+            @section Heading 4
+            @tip Make the fourth-level headings larger in size for better readability on small screens.
+            */
+            h4{
+                font-size:18px !important;
+                line-height:150% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            /*
+            @tab Mobile Styles
+            @section Boxed Text
+            @tip Make the boxed text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+            */
+            .mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentContainer .mcnTextContent p{
+                font-size:14px !important;
+                line-height:150% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            /*
+            @tab Mobile Styles
+            @section Header Text
+            @tip Make the header text larger in size for better readability on small screens.
+            */
+            .headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+                font-size:16px !important;
+                line-height:150% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            /*
+            @tab Mobile Styles
+            @section Body Text
+            @tip Make the body text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+            */
+            .bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+                font-size:16px !important;
+                line-height:150% !important;
+            }
+
+        }       @media only screen and (max-width: 480px){
+            /*
+            @tab Mobile Styles
+            @section Footer Text
+            @tip Make the footer content text larger in size for better readability on small screens.
+            */
+            .footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+                font-size:14px !important;
+                line-height:150% !important;
+            }
+
+        }
+    </style>
+	<div style="text-align: center;">
+		<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+			<tr>
+				<td align="center" valign="top" id="bodyCell">
+					<!-- BEGIN TEMPLATE // -->
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        {% if email_logo_url %}
+                            <tr>
+							<td align="center" valign="top" id="templateHeader" data-template-container>
+								<!--[if (gte mso 9)|(IE)]>
+								<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+								<tr>
+									<td align="center" valign="top" width="600" style="width:600px;">
+								<![endif]-->
+								<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+									<tr>
+										<td valign="top" class="headerContainer">
+											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+												<tbody class="mcnImageBlockOuter">
+													<tr>
+														<td valign="top" style="padding:9px" class="mcnImageBlockInner">
+															<table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+																<tbody>
+																	<tr>
+																		<td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+																			<img align="center" alt="Logo UCA" src="{{ email_logo_url }}" width="564" style="max-width:600px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--[if (gte mso 9)|(IE)]>
+								</td>
+								</tr>
+								</table>
+								<![endif]-->
+							</td>
+						</tr>
+                        {% endif %}
+						{% block email_content %}
+						{# Le contenu de l'email sera inséré ici par les templates enfants #}
+						{% endblock %}
+					</table>
+					<!-- // END TEMPLATE -->
+				</td>
+			</tr>
+		</table>
+	</div>
+
+{% endapply %}
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends '/bundles/TwigBundle/Exception/base_error.html.twig' %}
+
+{% block body %}
+    <div class="error-page">
+        <h2>Accès refusé (401)</h2>
+        <p>Vous n'avez pas l'autorisation d'accéder à cette page.</p>
+        <a href="{{ path('app_home') }}" class="btn btn-secondary">Retour à l'accueil</a>
+    </div>
+{% endblock %}

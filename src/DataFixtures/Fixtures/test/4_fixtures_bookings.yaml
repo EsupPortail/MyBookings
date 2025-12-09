@@ -1,0 +1,10 @@
+App\Entity\Booking:
+  booking_{1..500}:
+    catalogueResource: '@catalogue_resource_<numberBetween(1,250)>'
+    workflow: '@workflow_<numberBetween(1,2)>'
+    dateStart: <dateTimeBetween("now", "+30days")>
+    dateEnd: <dateTimeBetween("+31days", "+60days")>
+    number: '<randomDigitNot(0)>'
+    status: 'accepted'
+    userComment: '<text()>'
+    user: ['@user_*']

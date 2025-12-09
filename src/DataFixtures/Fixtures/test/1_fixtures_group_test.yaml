@@ -1,0 +1,6 @@
+App\Entity\Group:
+    group_1:
+        title: 'Utilisateurs test'
+        provider: 'db'
+        query: ''
+        users: <getArray(@user_{1..100})>

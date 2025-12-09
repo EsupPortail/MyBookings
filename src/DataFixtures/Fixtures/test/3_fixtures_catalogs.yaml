@@ -1,0 +1,707 @@
+App\Entity\PeriodBracket:
+  # 5 PeriodBracket par service (index 1-5 pour service_1, 6-10 pour service_2, etc.)
+  period_bracket_1:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_1'
+  period_bracket_{2..5}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_1'
+  period_bracket_{6..10}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_2'
+  period_bracket_{11..15}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_3'
+  period_bracket_{16..20}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_4'
+  period_bracket_{21..25}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_5'
+  period_bracket_{26..30}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_6'
+  period_bracket_{31..35}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_7'
+  period_bracket_{36..40}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_8'
+  period_bracket_{41..45}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_9'
+  period_bracket_{46..50}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_10'
+  period_bracket_{51..55}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_11'
+  period_bracket_{56..60}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_12'
+  period_bracket_{61..65}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_13'
+  period_bracket_{66..70}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_14'
+  period_bracket_{71..75}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_15'
+  period_bracket_{76..80}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_16'
+  period_bracket_{81..85}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_17'
+  period_bracket_{86..90}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_18'
+  period_bracket_{91..95}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_19'
+  period_bracket_{96..100}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_20'
+  period_bracket_{101..105}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_21'
+  period_bracket_{106..110}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_22'
+  period_bracket_{111..115}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_23'
+  period_bracket_{116..120}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_24'
+  period_bracket_{121..125}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_25'
+  period_bracket_{126..130}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_26'
+  period_bracket_{131..135}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_27'
+  period_bracket_{136..140}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_28'
+  period_bracket_{141..145}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_29'
+  period_bracket_{146..150}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_30'
+  period_bracket_{151..155}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_31'
+  period_bracket_{156..160}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_32'
+  period_bracket_{161..165}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_33'
+  period_bracket_{166..170}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_34'
+  period_bracket_{171..175}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_35'
+  period_bracket_{176..180}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_36'
+  period_bracket_{181..185}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_37'
+  period_bracket_{186..190}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_38'
+  period_bracket_{191..195}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_39'
+  period_bracket_{196..200}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_40'
+  period_bracket_{201..205}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_41'
+  period_bracket_{206..210}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_42'
+  period_bracket_{211..215}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_43'
+  period_bracket_{216..220}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_44'
+  period_bracket_{221..225}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_45'
+  period_bracket_{226..230}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_46'
+  period_bracket_{231..235}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_47'
+  period_bracket_{236..240}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_48'
+  period_bracket_{241..245}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_49'
+  period_bracket_{246..250}:
+    title: <randomElement(['Semaine standard', 'Weekend', 'Vacances scolaires', 'Horaires étendus', 'Période spéciale'])>
+    service: '@service_50'
+
+App\Entity\Period:
+  # Périodes pour jours de semaine (lundi-vendredi 8h-18h) - 1 par PeriodBracket
+  period_weekdays_{1..250}:
+    type: 'open'
+    day: [1, 2, 3, 4, 5]
+    dateStart: null
+    dateEnd: null
+    timeStart: <(new \DateTime('08:00:00'))>
+    timeEnd: <(new \DateTime('18:00:00'))>
+    periodBracket: '@period_bracket_<current()>'
+
+  # Périodes pour samedi (9h-17h) - 1 par PeriodBracket
+  period_saturday_{1..250}:
+    type: 'open'
+    day: [6]
+    dateStart: null
+    dateEnd: null
+    timeStart: <(new \DateTime('09:00:00'))>
+    timeEnd: <(new \DateTime('17:00:00'))>
+    periodBracket: '@period_bracket_<current()>'
+
+  # Périodes spécifiques avec dates (ex: vacances) - 1 par PeriodBracket
+  period_specific_{1..250}:
+    type: 'open'
+    day: [1, 2, 3, 4, 5, 6, 7]
+    dateStart: <dateTimeBetween('now', '+3 months')>
+    dateEnd: <dateTimeBetween('+3 months', '+6 months')>
+    timeStart: <(new \DateTime('10:00:00'))>
+    timeEnd: <(new \DateTime('16:00:00'))>
+    periodBracket: '@period_bracket_<current()>'
+
+App\Entity\Provision:
+  # 1 provision par PeriodBracket (donc 5 provisions par service)
+  provision_{1..250}:
+    workflow: '@workflow_<numberBetween(1,2)>'
+    groups: ['@group_*']
+    maxBookingDuration: <getBookingDuration()>
+    maxBookingByDay: <numberBetween(1, 3)>
+    maxBookingByWeek: <numberBetween(2, 8)>
+    bookingInterval: <randomElement([0, 15, 30, 60])>
+    periodBracket: '@period_bracket_<current()>'
+
+App\Entity\CatalogueResource:
+  # 5 catalogues par service (index 1-5 pour service_1, 6-10 pour service_2, etc.)
+  # Chaque catalogue utilise une provision du même service
+  catalogue_resource_{1..5}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.informatique.subcategories}>)>
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    type: '@category_1'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.informatique.imageExamples}>)>
+    subtype: '@subcategory_1*'
+    service: '@service_1'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{6..10}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.informatique.subcategories}>)>
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    type: '@category_1'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.informatique.imageExamples}>)>
+    subtype: '@subcategory_1*'
+    service: '@service_2'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{11..15}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.informatique.subcategories}>)>
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    type: '@category_1'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.informatique.imageExamples}>)>
+    subtype: '@subcategory_1*'
+    service: '@service_3'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{16..20}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.informatique.subcategories}>)>
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    type: '@category_1'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.informatique.imageExamples}>)>
+    subtype: '@subcategory_1*'
+    service: '@service_4'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{21..25}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.informatique.subcategories}>)>
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    type: '@category_1'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.informatique.imageExamples}>)>
+    subtype: '@subcategory_1*'
+    service: '@service_5'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{26..30}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.informatique.subcategories}>)>
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    type: '@category_1'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.informatique.imageExamples}>)>
+    subtype: '@subcategory_1*'
+    service: '@service_6'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{31..35}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.informatique.subcategories}>)>
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    type: '@category_1'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.informatique.imageExamples}>)>
+    subtype: '@subcategory_1*'
+    service: '@service_7'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{36..40}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.informatique.subcategories}>)>
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    type: '@category_1'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.informatique.imageExamples}>)>
+    subtype: '@subcategory_1*'
+    service: '@service_8'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{41..45}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.informatique.subcategories}>)>
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    type: '@category_1'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.informatique.imageExamples}>)>
+    subtype: '@subcategory_1*'
+    service: '@service_9'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{46..50}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.informatique.subcategories}>)>
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    type: '@category_1'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.informatique.imageExamples}>)>
+    subtype: '@subcategory_1*'
+    service: '@service_10'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{51..55}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.subcategories}>)>
+    type: '@category_2'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.imageExamples}>)>
+    subtype: '@subcategory_2*'
+    service: '@service_11'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{56..60}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.subcategories}>)>
+    type: '@category_2'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.imageExamples}>)>
+    subtype: '@subcategory_2*'
+    service: '@service_12'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{61..65}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.subcategories}>)>
+    type: '@category_2'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.imageExamples}>)>
+    subtype: '@subcategory_2*'
+    service: '@service_13'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{66..70}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.subcategories}>)>
+    type: '@category_2'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.imageExamples}>)>
+    subtype: '@subcategory_2*'
+    service: '@service_14'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{71..75}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.subcategories}>)>
+    type: '@category_2'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.imageExamples}>)>
+    subtype: '@subcategory_2*'
+    service: '@service_15'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{76..80}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.subcategories}>)>
+    type: '@category_2'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.imageExamples}>)>
+    subtype: '@subcategory_2*'
+    service: '@service_16'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{81..85}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.subcategories}>)>
+    type: '@category_2'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.imageExamples}>)>
+    subtype: '@subcategory_2*'
+    service: '@service_17'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{86..90}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.subcategories}>)>
+    type: '@category_2'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.imageExamples}>)>
+    subtype: '@subcategory_2*'
+    service: '@service_18'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{91..95}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.subcategories}>)>
+    type: '@category_2'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.imageExamples}>)>
+    subtype: '@subcategory_2*'
+    service: '@service_19'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{96..100}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.subcategories}>)>
+    type: '@category_2'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.audiovisuel.imageExamples}>)>
+    subtype: '@subcategory_2*'
+    service: '@service_20'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{101..105}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.salle.subcategories}>)>
+    type: '@category_3'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.salle.imageExamples}>)>
+    subtype: '@subcategory_3*'
+    service: '@service_21'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{106..110}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.salle.subcategories}>)>
+    type: '@category_3'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.salle.imageExamples}>)>
+    subtype: '@subcategory_3*'
+    service: '@service_22'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{111..115}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.salle.subcategories}>)>
+    type: '@category_3'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.salle.imageExamples}>)>
+    subtype: '@subcategory_3*'
+    service: '@service_23'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{116..120}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.salle.subcategories}>)>
+    type: '@category_3'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.salle.imageExamples}>)>
+    subtype: '@subcategory_3*'
+    service: '@service_24'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{121..125}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.salle.subcategories}>)>
+    type: '@category_3'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.salle.imageExamples}>)>
+    subtype: '@subcategory_3*'
+    service: '@service_25'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{126..130}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.salle.subcategories}>)>
+    type: '@category_3'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.salle.imageExamples}>)>
+    subtype: '@subcategory_3*'
+    service: '@service_26'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{131..135}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.salle.subcategories}>)>
+    type: '@category_3'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.salle.imageExamples}>)>
+    subtype: '@subcategory_3*'
+    service: '@service_27'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{136..140}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.salle.subcategories}>)>
+    type: '@category_3'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.salle.imageExamples}>)>
+    subtype: '@subcategory_3*'
+    service: '@service_28'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{141..145}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.salle.subcategories}>)>
+    type: '@category_3'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.salle.imageExamples}>)>
+    subtype: '@subcategory_3*'
+    service: '@service_29'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{146..150}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.salle.subcategories}>)>
+    type: '@category_3'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.salle.imageExamples}>)>
+    subtype: '@subcategory_3*'
+    service: '@service_30'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{151..155}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.subcategories}>)>
+    type: '@category_4'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.imageExamples}>)>
+    subtype: '@subcategory_4*'
+    service: '@service_31'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{156..160}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.subcategories}>)>
+    type: '@category_4'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.imageExamples}>)>
+    subtype: '@subcategory_4*'
+    service: '@service_32'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{161..165}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.subcategories}>)>
+    type: '@category_4'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.imageExamples}>)>
+    subtype: '@subcategory_4*'
+    service: '@service_33'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{166..170}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.subcategories}>)>
+    type: '@category_4'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.imageExamples}>)>
+    subtype: '@subcategory_4*'
+    service: '@service_34'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{171..175}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.subcategories}>)>
+    type: '@category_4'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.imageExamples}>)>
+    subtype: '@subcategory_4*'
+    service: '@service_35'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{176..180}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.subcategories}>)>
+    type: '@category_4'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.imageExamples}>)>
+    subtype: '@subcategory_4*'
+    service: '@service_36'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{181..185}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.subcategories}>)>
+    type: '@category_4'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.imageExamples}>)>
+    subtype: '@subcategory_4*'
+    service: '@service_37'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{186..190}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.subcategories}>)>
+    type: '@category_4'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.imageExamples}>)>
+    subtype: '@subcategory_4*'
+    service: '@service_38'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{191..195}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.subcategories}>)>
+    type: '@category_4'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.imageExamples}>)>
+    subtype: '@subcategory_4*'
+    service: '@service_39'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{196..200}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.subcategories}>)>
+    type: '@category_4'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Collection'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.vehicule.imageExamples}>)>
+    subtype: '@subcategory_4*'
+    service: '@service_40'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{201..205}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.materiel.subcategories}>)>
+    type: '@category_5'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.materiel.imageExamples}>)>
+    subtype: '@subcategory_5*'
+    service: '@service_41'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{206..210}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.materiel.subcategories}>)>
+    type: '@category_5'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.materiel.imageExamples}>)>
+    subtype: '@subcategory_5*'
+    service: '@service_42'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{211..215}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.materiel.subcategories}>)>
+    type: '@category_5'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.materiel.imageExamples}>)>
+    subtype: '@subcategory_5*'
+    service: '@service_43'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{216..220}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.materiel.subcategories}>)>
+    type: '@category_5'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.materiel.imageExamples}>)>
+    subtype: '@subcategory_5*'
+    service: '@service_44'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{221..225}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.materiel.subcategories}>)>
+    type: '@category_5'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.materiel.imageExamples}>)>
+    subtype: '@subcategory_5*'
+    service: '@service_45'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{226..230}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.materiel.subcategories}>)>
+    type: '@category_5'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.materiel.imageExamples}>)>
+    subtype: '@subcategory_5*'
+    service: '@service_46'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{231..235}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.materiel.subcategories}>)>
+    type: '@category_5'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.materiel.imageExamples}>)>
+    subtype: '@subcategory_5*'
+    service: '@service_47'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{236..240}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.materiel.subcategories}>)>
+    type: '@category_5'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.materiel.imageExamples}>)>
+    subtype: '@subcategory_5*'
+    service: '@service_48'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{241..245}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.materiel.subcategories}>)>
+    type: '@category_5'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.materiel.imageExamples}>)>
+    subtype: '@subcategory_5*'
+    service: '@service_49'
+    Provisions: ['@provision_<current()>']
+  catalogue_resource_{246..250}:
+    title: <randomElement(<{app.alice.parameters.resourceTypes.materiel.subcategories}>)>
+    type: '@category_5'
+    description: <sentence()>
+    localization: '@sublocalization_*'
+    view: 'Lot'
+    image: <randomElement(<{app.alice.parameters.resourceTypes.materiel.imageExamples}>)>
+    subtype: '@subcategory_5*'
+    service: '@service_50'
+    Provisions: ['@provision_<current()>']
+
+App\Entity\Resource:
+  resource_{1..2000}:
+    title: <randomElement(['Resource A', 'Resource B', 'Resource C', 'Resource D', 'Resource E', 'Resource F', 'Resource G'])>
+    catalogueResource: '@catalogue_resource_*'
+    service: ~

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/images/Favicon_bleu.png">
+        <title>Error</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f8f9fa;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+            }
+            .error-page {
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 30px;
+                background-color: #fff;
+                border: 1px solid #dee2e6;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                text-align: center;
+            }
+            .error-page h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .error-page p {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: #fff;
+                background-color: #006D82;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+            .btn-secondary {
+                background-color: #17a2b8;
+            }
+            .btn:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="/images/MyBookings_bleu.png" alt="MyBookings Logo" style="display: block; margin: 0 auto 20px; max-width: 200px;">
+        {% block body %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,72 @@
+security:
+    providers:
+        cas_user_provider:
+            id: cas_user_provider
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            login_throttling: null
+            switch_user: { role: ROLE_CAN_SWITCH }
+            login_link:
+                check_route: login_link_check
+                signature_properties: [ 'id' ]
+
+            logout:
+                path: app_logout
+            remote_user:
+                provider: cas_user_provider
+
+            custom_authenticators:
+                - App\Security\ShibAuthenticator
+                - yraiso.cas_authenticator
+            #entry_point: yraiso.cas_auth_entry_point
+            entry_point: App\Security\CustomEntrypoint
+
+            # activate different ways to authenticate
+            # https://symfony.com/doc/current/security.html#the-firewall
+
+            # https://symfony.com/doc/current/security/impersonating_user.html
+            # switch_user: true
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+        - { path: ^/login, roles: PUBLIC_ACCESS }
+        - { path: ^/metrics, roles: PUBLIC_ACCESS }
+        - { path: ^/generate, roles: PUBLIC_ACCESS }
+        - { path: ^/about, roles: PUBLIC_ACCESS }
+        - { path: ^/changelog, roles: PUBLIC_ACCESS }
+        - { path: ^/planning/catalog/\d+/list/anonymous, roles: PUBLIC_ACCESS }
+        - { path: ^/planning/catalog/\d+/card/anonymous, roles: PUBLIC_ACCESS }
+        - { path: ^/api/getAnonymousBookings, roles: PUBLIC_ACCESS }
+        - { path: ^/api/catalogueTitleResources, roles: PUBLIC_ACCESS }
+        - { path: ^/book, roles: ROLE_USER }
+        - { path: ^/manage, roles: ROLE_USER }
+        - { path: ^/administration, roles: ROLE_USER }
+        - { path: ^/ressourcerie, roles: ROLE_USER }
+        - { path: ^/me, roles: ROLE_USER }
+        - { path: ^/api, roles: ROLE_USER }
+        - { path: ^/, roles: PUBLIC_ACCESS }
+
+
+when@test:
+    security:
+        providers:
+            test_users:
+                memory:
+                    users:
+                        admin_user:
+                            roles: ['ROLE_USER', 'ROLE_ADMIN']
+                        test_user:
+                            roles: ['ROLE_USER']
+
+        firewalls:
+            main:
+                pattern: ^/
+                provider: test_users
+                http_basic: ~
+                stateless: false
+                lazy: true

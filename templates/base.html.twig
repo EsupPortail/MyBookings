@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="/images/Favicon_bleu.png">
+        <title>MyBookings</title>
+		{# custom css #}
+		{% if theme_css is defined %}
+            <style type="text/css">
+                {{ theme_css|raw }}
+            </style>
+		{% endif %}
+
+        {{ vite_entry_script_tags('app') }}
+        {{ vite_entry_link_tags('app') }}
+	</head>
+	<body>
+		{% block body %}{% endblock %}
+	</body>
+</html>

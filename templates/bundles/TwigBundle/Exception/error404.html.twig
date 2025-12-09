@@ -1,0 +1,9 @@
+{% extends '/bundles/TwigBundle/Exception/base_error.html.twig' %}
+
+{% block body %}
+    <div class="error-page">
+        <h2>La page n'existe pas (404)</h2>
+        <p>La page demandée n'a pas été trouvée.</p>
+        <a href="{{ path('app_home') }}" class="btn btn-secondary">Retour à l'accueil</a>
+    </div>
+{% endblock %}

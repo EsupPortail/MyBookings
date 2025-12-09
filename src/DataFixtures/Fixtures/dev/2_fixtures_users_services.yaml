@@ -1,0 +1,38 @@
+App\Entity\Localization:
+    localization_1:
+        title: 'Clermont-Ferrand'
+    localization_2:
+        title: 'Aubières'
+    localization_3:
+        title: 'Aurillac'
+    localization_4:
+        title: 'Vichy'
+    localization_5:
+        title: 'Montluçon'
+    localization_6:
+        title: 'Le Puy en Velay'
+    localization_7:
+        title: 'Chamalières'
+    localization_8:
+        title: 'Moulins'
+    sublocalization_{1..8}:
+        title: <randomElement(<{app.alice.parameters.locations}>)>
+        parent: '@localization_*'
+
+App\Entity\User:
+    user_{1..100}:
+        displayUserName: <firstName()> <lastName()>
+        username: <username()>
+        email: <email()>
+        roles: ['ROLE_USER']
+
+App\Entity\Service:
+    service_{1..50}:
+        title: <randomElement(<{app.alice.parameters.services}>)>_<current()>
+        type: 'bookings'
+
+App\Entity\Acl:
+    acl_{1..100}:
+        user: '@user_*'
+        service: '@service_*'
+        type: <randomElement(["ROLE_ADMINSITE","ROLE_MODERATOR"])>

@@ -1,0 +1,13 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    globals:
+        auth: '%env(AUTH_TYPE)%'
+        graphQlPlaygroundEnabled: false
+        email_logo_url: '%email_logo_url%'
+        social_facebook_url: '%social_facebook_url%'
+        social_instagram_url: '%social_instagram_url%'
+        social_website_url: '%social_website_url%'
+
+when@test:
+    twig:
+        strict_variables: true

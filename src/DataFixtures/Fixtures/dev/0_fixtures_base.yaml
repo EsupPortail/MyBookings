@@ -1,0 +1,110 @@
+App\Entity\Workflow:
+    workflow_1:
+        title: 'Validation automatique'
+        autoValidation: true
+        autoStart: true
+        autoEnd: true
+        configuration: {"autoValidation":true,"autoStart":true,"autoEnd":true,"notifications":{"accepted":null,"start":null,"end":null}}
+    workflow_2:
+        title: 'Validation manuelle'
+        autoValidation: false
+        autoStart: false
+        autoEnd: false
+        configuration: { "autoValidation": false,"autoStart": false,"autoEnd": false,"notifications": { "accepted": null,"start": null,"end": null } }
+
+App\Entity\Category:
+    category_1:
+        title: 'Informatique'
+        type: 'category'
+        view: 'Lot'
+    subcategory_11:
+        title: 'PC'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_1'
+    subcategory_12:
+        title: 'Ecrans'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_1'
+    subcategory_13:
+        title: 'Clavier'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_1'
+    category_2:
+        title: 'Audiovisuel'
+        type: 'category'
+        view: 'Lot'
+    subcategory_21:
+        title: 'TV'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_2'
+    subcategory_22:
+        title: 'Projecteur'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_2'
+    subcategory_23:
+        title: 'Caméra'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_2'
+    category_3:
+        title: 'Salles'
+        type: 'category'
+        view: 'Lot'
+    subcategory_31:
+        title: 'Amphithéâtre'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_3'
+    subcategory_32:
+        title: 'Box de travail'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_3'
+    subcategory_33:
+        title: 'Salle informatique'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_3'
+    category_4:
+        title: 'Véhicule'
+        type: 'category'
+        view: 'Lot'
+    subcategory_41:
+        title: 'Voiture'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_4'
+    subcategory_42:
+        title: 'Camion'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_4'
+    subcategory_43:
+        title: 'Minibus'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_4'
+    category_5:
+        title: 'Mobilier'
+        type: 'category'
+        view: 'Lot'
+    subcategory_51:
+        title: 'Chaise'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_5'
+    subcategory_52:
+        title: 'Table'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_5'
+    subcategory_53:
+        title: 'Fauteuil'
+        type: 'subcategory'
+        view: 'Lot'
+        parent: '@category_5'

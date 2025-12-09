@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}MyBookings
+{% endblock %}
+
+{% block body %}
+	<div>
+		{% if app.user is not null %}
+			<div id="app" data-encrypted-username="{{ app.user.encryptedUsername }}"></div>
+		{% else %}
+			<div id="app"></div>
+		{% endif %}
+        <div id="customContent" style="display: none">{% include'customContent.html.twig' %}</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,446 @@
+[
+  {
+    "icon": "task_alt",
+    "title": "Amélioration de la fenêtre d'édition des réservations sélectionnées",
+    "date": "05/12/2025",
+    "content": "La fenêtre d'édition des réservations sélectionnées a été améliorée. Les champs reprennent ceux de la réservation pour une meilleure visibilité."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Affichage des créneaux pré-réservés de l'onglet sélection",
+    "date": "05/12/2025",
+    "content": "Les créneaux enregistrés dans l'onglet sélection sont maintenant affichés dans le calendrier lors de la réservation."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction du problème d'inscription des nouveaux utilisateurs",
+    "date": "03/12/2025",
+    "content": "Les nouveaux utilisateurs ne rencontrent plus de problème lors de leur première utilisation de l'application."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Vérification des dates de réservations pour les administrateurs et modérateurs",
+    "date": "17/11/2025",
+    "content": "Les administrateurs et modérateurs ne peuvent plus créer de réservations avec une date de fin antérieure à la date de début."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Amélioration de l'accessibilité de l'interface",
+    "date": "17/11/2025",
+    "content": "L'interface de l'application a été améliorée pour être plus accessible aux utilisateurs ayant des besoins spécifiques. Des ajustements ont été faits pour améliorer la navigation au clavier et la compatibilité avec les lecteurs d'écran."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Adaptation pour les résolutions supérieures",
+    "date": "12/11/2025",
+    "content": "L'interface de l'application est maintenant adaptée pour les résolutions d'écran supérieures à 1920px de large. Les éléments de l'interface s'ajustent automatiquement pour une meilleure expérience utilisateur."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Traduction anglaise complétée",
+    "date": "23/10/2025",
+    "content": "L'ensemble de l'application est maintenant disponible en anglais. La langue est automatiquement détectée en fonction des préférences du navigateur de l'utilisateur. La préférence de langue est aussi sauvegardée pour les visites suivantes."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Ajout d'un commentaire sur le refus d'une modération",
+    "date": "16/10/2025",
+    "content": "Les modérateurs peuvent maintenant ajouter un commentaire lors du refus d'une réservation. Ce commentaire sera visible par l'utilisateur dans le mail de refus."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Modification du mailing pour la fin des réservations",
+    "date": "16/10/2025",
+    "content": "Les objets et contenu du mailing pour la fin des réservations a été revu pour être plus explicite."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Ajout de la sélection de la ressource sur le planning à la semaine",
+    "date": "09/10/2025",
+    "content": "Les utilisateurs peuvent maintenant sélectionner une ressource directement depuis le planning à la semaine. Le changement de ressource recharge automatiquement le planning."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Résolutions multiples",
+    "date": "17/09/2025",
+    "content": "Résolutions de multiples bugs mineurs dans l'application. (Intervalle entre les réservation, réservation directes, historique des réservation, etc...)"
+  },
+  {
+    "icon": "bug_report",
+    "title": "Changement de date calendrier",
+    "date": "12/09/2025",
+    "content": "Les réservations sont maintenant rechargées après la modification de la date depuis le calendrier. Une icône de chargement est maintenant affichée pour notifier de l'état de la requête."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Modification du processus d'envoi des mails",
+    "date": "09/09/2025",
+    "content": "Le processus d'envoi des mails a été revu pour améliorer la délivrabilité et la rapidité d'envoi."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction recherche ressources par type et calendrier",
+    "date": "05/09/2025",
+    "content": "Correction de la recherche des ressources 'par type de ressource' et du double clic sur le calendrier."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Périodes de réservation",
+    "date": "01/09/2025",
+    "content": "Multiples corrections suite à l'ajout des périodes de réservation (plages horaires)."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Modification date de la réservation",
+    "date": "01/09/2025",
+    "content": "La date de la réservation est de nouveau modifiable par les administrateurs et modérateurs."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Connexion des utilisateurs externes",
+    "date": "28/08/2025",
+    "content": "Les utilisateurs externes peuvent de nouveau se connecter à l'application et réserver des ressources."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Modification du planning de réservation (ouverture/fermeture)",
+    "date": "26/08/2025",
+    "content": "Adaptation du planning de réservation pour ajouter une multitude de période d'ouverture et de fermeture. L'ancien système de plage horaire est toujours disponible mais sera désactivé dans les prochaine semaines."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Restriction de la taille du titre de la réservation",
+    "date": "18/06/2025",
+    "content": "La taille du titre de la réservation est désormais limitée à 100 caractères pour garantir une meilleure lisibilité."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Résolution bug sous safari",
+    "date": "12/05/2025",
+    "content": "La réservation est entièrement fonctionnelle sous Safari. Les utilisateurs peuvent désormais réserver sans rencontrer de problèmes spécifiques au navigateur."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Ajout des métadonnées dans le fichier ical reçu par mail",
+    "date": "07/05/2025",
+    "content": "Après la réservation le fichier ical reçu par mail contiendra désormais toutes les métadonnées nécessaires pour une intégration fluide dans vos calendriers personnels. Cela inclut des informations telles que le lieu, l'organisateur et le titre de l'événement."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Gestion dynamique des règles de réservation",
+    "date": "07/05/2025",
+    "content": "Les utilisateurs seront avertis avant l'envoi de leur réservation si elle ne respecte pas les règles définies par l'administration."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Envoi d'une notification par mail lors de la modification de la réservation",
+    "date": "09/04/2025",
+    "content": "Un mail de notification est envoyé aux utilisateurs lors de la modification de la réservation par les administrateurs ou modérateurs."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Documentation interne à l'application sous format vidéo",
+    "date": "09/04/2025",
+    "content": "Intégration d'une page documentation regroupant des turoriels vidéos."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Affichage des réservations sur plusieurs jours",
+    "date": "07/04/2025",
+    "content": "L'affichage des réservations sur plusieurs jours est maintenant affiché en format calendrier."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Les actionneurs sur les réservations sont maintenant correctement appelés pour les réservations sur plusieurs jours",
+    "date": "24/03/2025",
+    "content": "L'accréditation est maintenant appliquée pour les réservations sur plusieurs jours. Elle est aussi désactivée si la réservation n'est pas acceptée par la modération."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Ajout d'une page d'affichage des réservations en direct",
+    "date": "21/03/2025",
+    "content": "Deux boutons sont maintenant disponible sur la page du catalogue permettant de voir la liste des réservations en cours sous deux formats différents (liste et carte)."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Affichage calendrier semaine réservations sans utilisateurs",
+    "date": "18/03/2025",
+    "content": "Résolution du problème d'affichage du calendrier quand des réservations sans utilisateurs étaient présentes."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Titre de la réservation obligatoire pour les réservations modérées",
+    "date": "18/03/2025",
+    "content": "La réservation ne pourra pas être envoyée si le titre de la réservation n'a pas été renseigné."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Problème d'ajout d'utilisateurs pour les modérateurs",
+    "date": "18/03/2025",
+    "content": "Les modérateurs peuvent maintenant ajouter des utilisateurs à une réservation."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Détection des utilisateurs déconnectés de l'application",
+    "date": "14/03/2025",
+    "content": "Une indication de reconnexion à l'application est maintenant affichée lorsqu'un utilisateur est déconnecté."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Messages d'alertes pour les réservations à modération",
+    "date": "14/03/2025",
+    "content": "De nouveaux messages plus explicites sont affichés dans les mails et les popup lors des réservations nécessitant une modération."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Meilleure prise en charge des appareils mobile",
+    "date": "19/02/2025",
+    "content": "L'interface est maintenant plus adaptée aux petits écrans."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Redirection réservation catalogue",
+    "date": "19/02/2025",
+    "content": "L'utilisateur est redirigé directement vers la réservation de la ressource lorsque la recherche ne retourne qu'une seule ressource."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Changement de la liste des catalogues",
+    "date": "18/02/2025",
+    "content": "La liste des catalogues n'est plus sous forme de calendrier. Les catalogues sont maintenant affichés sous forme de cartes."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Les administrateurs et modérateurs ne sont plus conditionnés sur les règles de réservations",
+    "date": "14/02/2025",
+    "content": "Ex: Capacité des salles."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Les réservations venant des modérateurs et administrateurs seront automatiquement acceptées.",
+    "date": "14/02/2025",
+    "content": "Les modérateurs devront initier les réservations pour que celles-ci soient automatiquement acceptées."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Changement d'emplacement du bouton 'refuser la réservation' dans la partie administration",
+    "date": "13/02/2025",
+    "content": "Le bouton refuser la réservation est maintenant situé en haut de la page de détail de la réservation."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Imagine affichée de la ressource concernée dans l'onglet 'mes réservations'",
+    "date": "13/02/2025",
+    "content": "L'imagine du catalogue ne sera utilisé seulement quand l'image de la ressource n'aura pas été attribuée."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction d'ajout des utilisateurs à la réservation",
+    "date": "07/02/2025",
+    "content": "L'erreur lors de l'ajout d'un utilisateur à une réservation est corrigée."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction de l'envoi du mail de notification a la modération",
+    "date": "07/02/2025",
+    "content": "Le mail de notification à la modération prend correctement en compte l'ensemble de la description du workflow. Les modérateurs renseignés dans le workflow ne seront plus notifiés à lors de leur propre réservation."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Amélioration de la liste des réservation dans l'interface d'administration",
+    "date": "05/02/2025",
+    "content": "La liste des réservations dans l'interface d'administration est maintenant plus rapide. Des champs de filtrage sont maintenant disponibles pour filtrer les réservations par date, titre et par utilisateurs."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction sélection double date dans le calendrier",
+    "date": "31/01/2025",
+    "content": "Le calendrier ne recharge plus la page quand les utilisateurs sélectionnent deux fois une date."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Ajout des informations dans les mails aux utilisateurs et aux administrateurs",
+    "date": "31/01/2025",
+    "content": "Les participants à la réservation ansi que le titre ont été ajoutés dans les mails envoyés aux utilisateurs et aux administrateurs."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Amélioration de la réactivité de l'interface",
+    "date": "30/01/2025",
+    "content": "L'interface de recherche des ressources est maintenant plus rapide."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Possibilité de modifier les réservations à posteriori",
+    "date": "20/01/2025",
+    "content": "Les administrateurs et modérateurs peuvent maintenant modifier les réservations qui ne sont pas encore terminées."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction affichage calendrier à la semaine",
+    "date": "16/01/2025",
+    "content": "Le calendrier à la semaine ne disparait plus après la sélection de la première réservation."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction affichage description du catalogue",
+    "date": "13/01/2025",
+    "content": "L'affichage de la description du catalogue sur le lien de réservation direct est corrigé."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Edition des catégories et workflows",
+    "date": "13/01/2025",
+    "content": "L'édition des catégories et la suppression des workflows ont été corrigés."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Planning des réservation du catalogue",
+    "date": "09/01/2025",
+    "content": "Les différentes ressources sont maintenant affichées dans une couleur différente dans le planning des réservations du catalogue. Le titre de la réservation et la ressource sont aussi affichés."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Ajout du titre de la réservation",
+    "date": "09/01/2025",
+    "content": "Les utilisateurs peuvent maintenant définir un titre à la réservation qui sera visible dans le planning des réservations du catalogue dans l'administration."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction réservation 'maintenant'",
+    "date": "08/01/2025",
+    "content": "La réservation depuis le lien direct en mode 'maintenant' est corrigée."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction taille des images ressources",
+    "date": "08/01/2025",
+    "content": "Les images des ressources et des catalogues sont correctement dimensionnées. Un logo apparaitra à l'utilisateur si aucune image n'existe pour la ressource ou le catalogue."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction visualisation d'un catalogue à un autre",
+    "date": "07/01/2025",
+    "content": "Le sélecteur des ressources des catalogues est correctement mis à jour lors du changement de catalogue."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction réservation sur plusieurs jours",
+    "date": "07/01/2025",
+    "content": "Les champs de la réservation sur plusieurs jours prennent correctement compte la durée maximale de la réservation."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Affichage du calendrier au click sur la date du jour",
+    "date": "06/01/2025",
+    "content": "Le calendrier est maintenant affiché au click sur la date dans l'interface de réservation, permettant aux utilisateurs de changer de date plus rapidement sans avoir à passer de jour en jour."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Réservation pour d'autres utilisateurs",
+    "date": "06/01/2025",
+    "content": "Les modérateurs et administrateurs peuvent maintenant réserver des ressources pour d'autres utilisateurs sans être attachés aux réservations."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Edition des workflows",
+    "date": "06/01/2025",
+    "content": "Il est maintenant possible d'éditer les workflows existants. Les modifications apportées aux workflows sont prises en compte pour les nouvelles réservations."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Possibilité d'ajouter plusieurs adresses mail de modération dans le workflow.",
+    "date": "20/12/2024",
+    "content": "Il est maintenant possible d'ajouter plusieurs adresses mail de modération dans le workflow. Les adresses mails doivent être séparées par des points-virgules."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction plannings multiples dans l'interface administration",
+    "date": "13/12/2024",
+    "content": "Le calendrier dans l'interface administration affiche désormais le planning courant."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction de la liste des administrations",
+    "date": "10/12/2024",
+    "content": "La liste des administrations dont vous disposez les droits d'accès est maintenant exacte."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction de la durée des requêtes quand la localisation était sélectionnée",
+    "date": "09/12/2024",
+    "content": "La recherche des ressources avec une localisation sélectionnée est maintenant plus rapide."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Ajout de la gestion des d'utilisateurs externes dans l'interface d'administration",
+    "date": "18/11/2024",
+    "content": "Des utilisateurs exteres peuvent maintenant être créés et gérés dans l'interface d'administration. Ils peuvent être ajoutés dans des groupes internes et avoir accès à certaines ressources."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Ajout de la gestion des groupes d'utilisateurs dans l'interface d'administration",
+    "date": "18/11/2024",
+    "content": "Des groupes d'utilisateurs internes peuvent maintenant être créé et géré dans l'interface d'administration. Ils peuvent ensuite être utilisés pour restreindre l'accès à certaines ressources."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction de la suppression des workflows si des réservations sont associées",
+    "date": "14/11/2024",
+    "content": "Les workflows peuvent être maintenant supprimés si des réservations sont associées."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction du refus des réservations par la modération",
+    "date": "13/11/2024",
+    "content": "Le mail de refus est maintenant correctement envoyé aux utilisateurs lorsque la réservation est refusée par la modération et la liste des réservations refusées est correctement affichée dans l'interface d'administration."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Nouvelle page d'authentification /login",
+    "date": "13/11/2024",
+    "content": "Ajout d'une nouvelle page d'authentification pour les utilisateurs. Utilisable notamment pour les utilisateurs externes."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Sauvegarde des logs des réservations supprimées par les utilisateurs",
+    "date": "06/11/2024",
+    "content": "L'action de suppression d'une réservation par un utilisateur est désormais sauvegardée dans les logs."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Correction des restrictions de réservation",
+    "date": "06/11/2024",
+    "content": "Les restriction s'appliquent désormais correctement lors de l'ajout d'un participant à la réservation."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Ajout de la réservation sur plusieurs jours",
+    "date": "06/11/2024",
+    "content": "Ajout de la possibilité de réserver une ressource sur plusieurs jours. Le planning doit être défini par l'administrateur sur 'autoriser la réservation sur plusieurs jours'."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Authentification des utilisateurs externes",
+    "date": "05/11/2024",
+    "content": "Ajout de la possibilité de s'authentifier avec un compte externe qui doit être créé via l'interface d'administration."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Changement des groupes d'utilisateurs",
+    "date": "30/10/2024",
+    "content": "Les groupes d'utilisateurs ont été modifiés pour permettre une gestion plus fine des droits d'accès. Les groupes définissent maintenant leurs sources de données (LDAP, BDD, etc..)."
+  },
+  {
+    "icon": "bug_report",
+    "title": "Les réservation au même moment sont maintenant correctement gérées",
+    "date": "22/10/2024",
+    "content": "Ajout d'un système de file permettant d'éviter que deux utilisateurs réservent la même ressource au même moment."
+  },
+  {
+    "icon": "task_alt",
+    "title": "Actionneurs sur les réservations",
+    "date": "16/10/2024",
+    "content": "Les actionneurs sont maintenant appelés le même jour que les réservations. Les réservations les jours suivants mettent en attente les appels vers les actionneurs en attendant le jour J."
+  }
+]
